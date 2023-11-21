@@ -1,0 +1,19 @@
+{
+  "name": "electron-osc-boilerplate",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "server": "node server.js",
+    "test": "cross-env ELECTRON_DISABLE_SECURITY_WARNINGS=true electron app/main.js",
+    "package": "electron-packager app OSC --platform=win32 --arch=x64 --app-version=0.1.0 --out packaged --overwrite"
+  },
+  "dependencies": {
+    "electron": "^27.1.0",
+    "electron-packager": "^17.1.2",
+    "node-osc": "^9.0.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
